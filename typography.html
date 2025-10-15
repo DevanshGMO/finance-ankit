@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<title>Typography | Ankit Panchal & Associates- Financial Services and Business Consulting Template</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" href="image/Logomain.png" type="image/png" sizes="16x16">
+	<link rel="stylesheet" type="text/css" href="css/vendor.bundle.css">
+	<link id="style-css" rel="stylesheet" type="text/css" href="css/styles.css">
+	<style type="text/css">
+		/* Only Demo Purpose */
+		.colorPanel {
+			margin: 0px;
+			padding: 5px;
+			position: fixed;
+			z-index: 100;
+			min-width: 20px;
+			border-radius: 0 3px 3px 0;
+			background-color: #4b00a0;
+			top: 35%;
+			text-align: center
+		}
+
+		.colorPanel ul {
+			margin: 0px;
+			padding: 0px;
+			list-style: none;
+			display: none
+		}
+
+		.colorPanel ul li {
+			display: block;
+			margin-top: 10px;
+		}
+
+		.colorPanel ul a {
+			display: block;
+			margin: 0 auto;
+			width: 20px;
+			height: 20px;
+			border: #fff 1px solid;
+		}
+
+		.colorPanel a.cart,
+		.colorPanel a.home-solid {
+			border-bottom: 1px solid rgba(255, 255, 255, .3);
+			margin-bottom: 6px;
+			padding-bottom: 8px;
+			display: block;
+		}
+
+		.colorPanel a.home-solid i {
+			display: block;
+			margin: 12px auto 4px;
+		}
+
+		.colorPanel a.home-solid {
+			color: #fff;
+			font-weight: bold;
+			font-size: 9px;
+			text-transform: uppercase
+		}
+
+		#cpToggle {
+			display: block;
+			height: 30px;
+			margin: 0 auto;
+			width: 28px;
+			line-height: 30px;
+			background-size: cover;
+		}
+
+		.cp-custom {
+			padding: 12px;
+		}
+
+		.cp-custom #cpToggle {
+			background: none;
+		}
+
+		.cp-custom i {
+			font-size: 15px;
+			color: #fff;
+		}
+	</style>
+	<script>
+		(function (i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date(); a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', '../../www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-91615293-2', 'auto');
+		ga('send', 'pageview');
+	</script>
+</head>
+
+<body class="site-body style-v1 page-typo">
+	<!-- Header -->
+	<header class="site-header header-s1 is-transparent is-sticky">
+
+		<div class="navbar navbar-primary">
+			<div class="container">
+				<!-- Logo -->
+				<a class="navbar-brand" href="index.html">
+					<img class="logo logo-dark" alt="" src="image/Logomain.png" srcset="image/logo2x.png 2x">
+					<img class="logo logo-light" alt="" src="image/logo-light.png" srcset="image/Logomain.png">
+				</a>
+				<!-- #end Logo -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainnav"
+						aria-expanded="false">
+						<span class="sr-only">Menu</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- Q-Button for Mobile -->
+					<div class="quote-btn"><a class="btn" href="get-a-quote.html">Sign in</a></div>
+				</div>
+				<!-- MainNav -->
+				<nav class="navbar-collapse collapse navoqw" id="mainnav">
+					<ul class="nav navbar-nav">
+						<li class="dropdown"><a href="index.html">Home</a>
+							<ul class="dropdown-menu">
+								<li><a href="index.html">Home - Default</a></li>
+								<li><a href="index-v2.html">Home - Version 2</a></li>
+								<li><a href="index-v3.html">Home - Version 3</a></li>
+								<li><a href="index-v4.html">Home - Version 4</a></li>
+								<li><a href="index-static.html">Home - Image</a></li>
+							</ul>
+						</li>
+						<li class="dropdown"><a href="about-us.html">About us <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="faqs.html">FAQ's</a></li>
+								<li><a href="teams.html">Teams</a></li>
+								<li><a href="about-us-alter.html">About - Alter</a></li>
+								<li><a href="teams-alter.html">Teams - Alter</a></li>
+								<li><a href="contact-extend.html">Contact - Extend</a></li>
+								<li><a href="gallery.html">Gallery <span class="label label-info">New</span></a></li>
+								<li><a href="portfolio.html">Portfolio <span class="label label-info">New</span></a></li>
+								<li><a href="portfolio-single.html">Portfolio Single <span class="label label-info">New</span></a></li>
+								<li><a href="#">Shortcode <span class="label label-danger">Hot &amp; New</span></a>
+									<ul class="dropdown-menu">
+										<li><a href="shortcode.html">Shortcode - Element</a></li>
+										<li><a href="shortcode-carousel.html">Shortcode - Carousel</a></li>
+										<li><a href="shortcode-banner.html">Shortcode - Banner</a></li>
+									</ul>
+								</li>
+								<li><a href="typography.html">Typography</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="service.html" class="dropdown-toggle">Services <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="service.html">Services List</a></li>
+								<li><a href="Insurance.html">Services List - Alter</a></li>
+								<li><a href="service-single.html">Services Single</a></li>
+								<li><a href="service-single-alter.html">Services Single - Alter</a></li>
+							</ul>
+						</li>
+						<li><a href="testimonial.html">Testimonial</a></li>
+						<li><a href="consulatant.html">News</a></li>
+						<li class="quote-btn"><a class="btn" href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+				<!-- #end MainNav -->
+			</div>
+		</div>
+		<!-- #end Navbar -->
+		<!-- Banner/Static -->
+		<div class="banner banner-static">
+			<div class="banner-cpn">
+				<div class="container">
+					<div class="content row">
+
+						<div class="banner-text">
+							<h1 class="page-title">Typography Elements</h1>
+							<p>Get your typography element form here</p>
+						</div>
+						<div class="page-breadcrumb">
+							<ul class="breadcrumb">
+								<li><a href="index.html">Home</a></li>
+								<li class="active"><span>Typography</span></li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="banner-bg imagebg">
+				<img src="image/banner-inside-a.jpg" alt="" />
+			</div>
+		</div>
+		<!-- #end Banner/Static -->
+	</header>
+	<!-- End Header -->
+
+	<!-- Content -->
+	<div class="section secion-contents section-pad">
+		<div class="container">
+			<div class="content row">
+
+				<div class="content-section ">
+					<h6 class="heading-sm-lead color-secondary with-line">Heading style</h6>
+					<div class="gaps"></div>
+					<h1>Heading H1</h1>
+					<h2>Heading H2</h2>
+					<h3>Heading H3</h3>
+					<h4>Heading H4</h4>
+					<h5>Heading H5</h5>
+					<h6>Heading H6</h6>
+					<hr>
+					<h1 class="heading-lead">Heading Lead (H1)</h1>
+					<h1 class="heading-section">Heading Section (H1) </h1>
+					<hr>
+					<p class="heading-sm-lead">Heading Small Lead</p>
+					<h1>Headline Text Goes Here</h1>
+				</div>
+				<hr>
+				<div class="content-section">
+					<h6 class="heading-sm-lead color-secondary with-line">Content / Paragraph style</h6>
+					<div class="gaps"></div>
+					<h2>Content Title</h2>
+					<p>Lorem ipsum dolor sit amet, eam ea errem graeco vulputate, mel scaevola appetere volutpat ei. Vix et munere
+						animal meliore, eos ea sint congue option, diam repudiare cu nec. At verear delicatissimi his, vix in illud
+						oblique necessitatibus, solum oratio intellegebat cum ei. Eu sit choro vivendo forensibus, graeco facilis an
+						pri. Ei pro prompta dissentiunt.</p>
+					<h4>Content Another Title</h4>
+					<p>Ea omnis volumus dissentiunt eum. Pri in mutat mollis conclusionemque. Quo vero dicat an, nisl atqui
+						omnesque ei est. Assum imperdiet adversarium nec no, propriae suscipit mediocrem no sed. Mea purto summo
+						option et.</p>
+					<hr>
+				</div>
+				<div class="content-section">
+					<h6 class="heading-sm-lead color-secondary with-line">List style</h6>
+					<div class="gaps"></div>
+					<div class="row">
+						<div class="col-md-4 res-m-bttm">
+							<h3>Arrow List</h3>
+							<ul class="list-style arrow">
+								<li>Eam ea errem graeco vulputate mel scaevola appetere volutpat</li>
+								<li>Lvulputate mel scaevola appetere volutpat</li>
+								<li>Dappetere volutpat vix et munere</li>
+								<li>Rgraeco vulputate mel scaevola appetere</li>
+							</ul>
+						</div>
+						<div class="col-md-4 res-m-bttm">
+							<h3>Dots List</h3>
+							<ul class="list-style dots">
+								<li>Eam ea errem graeco vulputate mel scaevola appetere volutpat</li>
+								<li>Lvulputate mel scaevola appetere volutpat</li>
+								<li>Dappetere volutpat vix et munere</li>
+								<li>Rgraeco vulputate mel scaevola appetere</li>
+							</ul>
+						</div>
+						<div class="col-md-4">
+							<h3>Number List</h3>
+							<ol>
+								<li>Eam ea errem graeco vulputate mel scaevola appetere volutpat</li>
+								<li>Lvulputate mel scaevola appetere</li>
+								<li>Dappetere volutpat vix et munere</li>
+								<li>Rgraeco vulputate mel scaevo</li>
+							</ol>
+						</div>
+					</div>
+					<hr>
+				</div>
+				<div class="content-section">
+					<h6 class="heading-sm-lead color-secondary with-line">Button style</h6>
+					<div class="gaps"></div>
+					<div class="row">
+						<div class="col-md-3 col-sm-6 col-xs-6 res-m-bttm">
+							<span class="gaps size-sm"></span>
+							<p><a href="#" class="btn btn-lg">Large Button</a></p>
+							<p><a href="#" class="btn">Regular Button</a></p>
+							<p><a href="#" class="btn btn-md">Medium Button</a></p>
+							<p><a href="#" class="btn btn-sm">Small Button</a></p>
+							<span></span>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-6 res-m-bttm">
+							<span class="gaps size-sm"></span>
+							<p><a href="#" class="btn btn-alt btn-lg">Large Button</a></p>
+							<p><a href="#" class="btn btn-alt">Regular Button</a></p>
+							<p><a href="#" class="btn btn-alt btn-md">Medium Button</a></p>
+							<p><a href="#" class="btn btn-alt btn-sm">Small Button</a></p>
+							<span></span>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-6 res-m-bttm">
+							<span class="gaps size-sm"></span>
+							<p><a href="#" class="btn btn-outline btn-lg">Large Button</a></p>
+							<p><a href="#" class="btn btn-outline">Regular Button</a></p>
+							<p><a href="#" class="btn btn-outline btn-md">Medium Button</a></p>
+							<p><a href="#" class="btn btn-outline btn-sm">Small Button</a></p>
+							<span></span>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-6">
+							<span class="gaps size-sm"></span>
+							<p><a href="#" class="btn btn-alt btn-outline btn-lg">Large Button</a></p>
+							<p><a href="#" class="btn btn-alt btn-outline">Regular Button</a></p>
+							<p><a href="#" class="btn btn-alt btn-outline btn-md">Medium Button</a></p>
+							<p><a href="#" class="btn btn-alt btn-outline btn-sm">Small Button</a></p>
+							<span></span>
+						</div>
+					</div>
+					<hr>
+				</div>
+
+				<div class="content-section">
+					<h6 class="heading-sm-lead color-secondary with-line">Bootstrap Column</h6>
+					<div class="gaps"></div>
+					<div class="row">
+						<div class="col-md-6 res-m-bttm-sm">
+							<h4>Column Half</h4>
+							<p>Lorem ipsum dolor sit amet, eam ea errem graeco vulpu scaevola appetere volutpat. Veam ea errem graeco
+								vulpu scaevola appetere volutpat.</p>
+						</div>
+						<div class="col-md-6">
+							<h4>Column Half</h4>
+							<p>Lorem ipsum dolor sit amet, eam ea errem graeco vulpu scaevola appetere volutpat. Veam ea errem graeco
+								vulpu scaevola appetere volutpat.</p>
+						</div>
+					</div>
+					<div class="gaps"></div>
+					<div class="row">
+						<div class="col-md-4 res-m-bttm-sm">
+							<h4>Column X</h4>
+							<p>Lorem ipsum dolor sit amet, eam ea errem graeco vulpu scaevola norleb.</p>
+						</div>
+						<div class="col-md-4 res-m-bttm-sm">
+							<h4>Column Y</h4>
+							<p>Lorem ipsum dolor sit amet, eam ea errem graeco vulpu scaevola norleb.</p>
+						</div>
+						<div class="col-md-4">
+							<h4>Column Z</h4>
+							<p>Lorem ipsum dolor sit amet, eam ea errem graeco vulpu scaevola norleb.</p>
+						</div>
+					</div>
+					<div class="gaps"></div>
+					<div class="row">
+						<div class="col-md-3 res-m-bttm-sm">
+							<h4>Column A</h4>
+							<p>Lorem ipsum dolor sit amet, eam ea errem graeco vulpu scaevola.</p>
+						</div>
+						<div class="col-md-3 res-m-bttm-sm">
+							<h4>Column B</h4>
+							<p>Lorem ipsum dolor sit amet, eam ea errem graeco vulpu scaevola.</p>
+						</div>
+						<div class="col-md-3 res-m-bttm-sm">
+							<h4>Column C</h4>
+							<p>Lorem ipsum dolor sit amet, eam ea errem graeco vulpu scaevola.</p>
+						</div>
+						<div class="col-md-3">
+							<h4>Column D</h4>
+							<p>Lorem ipsum dolor sit amet, eam ea errem graeco vulpu scaevola.</p>
+						</div>
+					</div>
+					<div class="gaps"></div>
+					<div class="row">
+						<div class="col-md-2 res-m-bttm-sm">
+							<h4>Column 1</h4>
+							<p>Lorem ipsum dolor sit amet eam ea errem.</p>
+						</div>
+						<div class="col-md-2 res-m-bttm-sm">
+							<h4>Column 2</h4>
+							<p>Lorem ipsum dolor sit amet eam ea errem.</p>
+						</div>
+						<div class="col-md-2 res-m-bttm-sm">
+							<h4>Column 3</h4>
+							<p>Lorem ipsum dolor sit amet eam ea errem.</p>
+						</div>
+						<div class="col-md-2 res-m-bttm-sm">
+							<h4>Column 4</h4>
+							<p>Lorem ipsum dolor sit amet eam ea errem.</p>
+						</div>
+						<div class="col-md-2 res-m-bttm-sm">
+							<h4>Column 5</h4>
+							<p>Lorem ipsum dolor sit amet eam ea errem.</p>
+						</div>
+						<div class="col-md-2">
+							<h4>Column 6</h4>
+							<p>Lorem ipsum dolor sit amet eam ea errem.</p>
+						</div>
+					</div>
+					<div class="gaps"></div>
+					<div class="row">
+						<div class="col-md-1 res-m-bttm-sm">
+							<h4>Col 1</h4>
+							<p>Col Text</p>
+						</div>
+						<div class="col-md-1 res-m-bttm-sm">
+							<h4>Col 2</h4>
+							<p>Col Text</p>
+						</div>
+						<div class="col-md-1 res-m-bttm-sm">
+							<h4>Col 3</h4>
+							<p>Col Text</p>
+						</div>
+						<div class="col-md-1 res-m-bttm-sm">
+							<h4>Col 4</h4>
+							<p>Col Text</p>
+						</div>
+						<div class="col-md-1 res-m-bttm-sm">
+							<h4>Col 5</h4>
+							<p>Col Text</p>
+						</div>
+						<div class="col-md-1 res-m-bttm-sm">
+							<h4>Col 6</h4>
+							<p>Col Text</p>
+						</div>
+						<div class="col-md-1 res-m-bttm-sm">
+							<h4>Col 7</h4>
+							<p>Col Text</p>
+						</div>
+						<div class="col-md-1 res-m-bttm-sm">
+							<h4>Col 8</h4>
+							<p>Col Text</p>
+						</div>
+						<div class="col-md-1 res-m-bttm-sm">
+							<h4>Col 9</h4>
+							<p>Col Text</p>
+						</div>
+						<div class="col-md-1 res-m-bttm-sm">
+							<h4>Col 10</h4>
+							<p>Col Text</p>
+						</div>
+						<div class="col-md-1 res-m-bttm-sm">
+							<h4>Col 11</h4>
+							<p>Col Text</p>
+						</div>
+						<div class="col-md-1">
+							<h4>Col 12</h4>
+							<p>Col Text</p>
+						</div>
+					</div>
+					<hr>
+				</div>
+
+				<div class="content-section">
+					<h6 class="heading-sm-lead color-secondary with-line">Bootstrap Table style</h6>
+					<div class="gaps"></div>
+					<div class="table-responsive">
+						<table class="table">
+							<thead>
+								<tr>
+									<th>Firstname</th>
+									<th>Lastname</th>
+									<th>Age</th>
+									<th>City</th>
+									<th>Country</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Anna</td>
+									<td>Pitt</td>
+									<td>35</td>
+									<td>New York</td>
+									<td>USA</td>
+								</tr>
+								<tr>
+									<td>Anna</td>
+									<td>Pitt</td>
+									<td>35</td>
+									<td>New York</td>
+									<td>USA</td>
+								</tr>
+								<tr>
+									<td>Anna</td>
+									<td>Pitt</td>
+									<td>35</td>
+									<td>New York</td>
+									<td>USA</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="table-responsive">
+						<table class="table table-striped">
+							<thead>
+								<tr>
+									<th>Firstname</th>
+									<th>Lastname</th>
+									<th>Email</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>John</td>
+									<td>Doe</td>
+									<td>john@example.com</td>
+								</tr>
+								<tr>
+									<td>Mary</td>
+									<td>Moe</td>
+									<td>mary@example.com</td>
+								</tr>
+								<tr>
+									<td>July</td>
+									<td>Dooley</td>
+									<td>july@example.com</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<hr>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- End Content -->
+
+	<!-- Call Action -->
+	<div class="call-action bg-primary">
+		<div class="cta-block">
+			<div class="container">
+				<div class="content row">
+
+					<div class="cta-sameline">
+						<h3>Looking for a greats consultantcy for your new business?</h3>
+						<p>Contact us today by submit a business inquiry form online.</p>
+						<a class="btn btn-outline" href="get-a-quote.html">Contact Us</a>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Section -->
+	<!-- Footer Widget-->
+	<div class="footer-widget style-v2 section-pad-md">
+		<div class="container">
+			<div class="row">
+
+				<div class="widget-row row">
+					<div class="footer-col col-md-3 col-sm-6 res-m-bttm">
+						<!-- Each Widget -->
+						<div class="wgs wgs-footer wgs-text">
+							<div class="wgs-content">
+								<p><img src="image/Logomain.png" srcset="image/logo2x.png 2x" alt=""></p>
+								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusan tiudo lorem quveniamv eniam
+									laud accusan tiud. Voluptatem accusan tiudo lorem quveniamv eniam laud accusan tiud.</p>
+							</div>
+						</div>
+						<!-- End Widget -->
+					</div>
+					<div class="footer-col col-md-3 col-sm-6 col-md-offset-1 res-m-bttm">
+						<!-- Each Widget -->
+						<div class="wgs wgs-footer wgs-menu">
+							<h5 class="wgs-title">Our Services</h5>
+							<div class="wgs-content">
+								<ul class="menu">
+									<li><a href="#">Advisory</a></li>
+									<li><a href="#">Audit</a></li>
+									<li><a href="#">Consultent</a></li>
+									<li><a href="#">Assurance</a></li>
+									<li><a href="#">Funds</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- End Widget -->
+					</div>
+					<div class="footer-col col-md-2 col-sm-6 res-m-bttm">
+						<!-- Each Widget -->
+						<div class="wgs wgs-footer wgs-menu">
+							<h5 class="wgs-title">Quick Links</h5>
+							<div class="wgs-content">
+								<ul class="menu">
+									<li><a href="#">Home</a></li>
+									<li><a href="#">About Us</a></li>
+									<li><a href="#">Testimonial</a></li>
+									<li><a href="#">Expert</a></li>
+									<li><a href="#">Contact Us</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- End Widget -->
+					</div>
+
+					<div class="footer-col col-md-3 col-sm-6">
+						<!-- Each Widget -->
+						<div class="wgs wgs-footer">
+							<h5 class="wgs-title">Get In Touch</h5>
+							<div class="wgs-content">
+								<p>
+									1234 Sed spiciatis Road <br>
+									Atero eos, D58 8975, USA.</p>
+								<p><span>Toll Free</span>: (1-800) 234 5678<br>
+									<span>Phone</span>: (123) 1234 5678
+								</p>
+								<ul class="social">
+									<li><a href="#"><em class="fa fa-facebook" aria-hidden="true"></em></a></li>
+									<li><a href="#"><em class="fa fa-twitter" aria-hidden="true"></em></a></li>
+									<li><a href="#"><em class="fa fa-linkedin" aria-hidden="true"></em></a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- End Widget -->
+					</div>
+
+				</div><!-- Widget Row -->
+
+			</div>
+		</div>
+	</div>
+	<!-- End Footer Widget -->
+
+	<!-- Copyright -->
+	<div class="copyright style-v2">
+		<div class="container">
+			<div class="row">
+
+				<div class="row">
+					<div class="site-copy col-sm-7">
+						<p>&copy; Ankit Panchal & Associates <a href="privacy.html">Policy</a></p>
+					</div>
+					<div class="site-by col-sm-5 al-right">
+						<p>Template Made by <a href="http://softnio.com/" target="_blank">Softnio.</a></p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- End Copyright -->
+
+	<!-- JavaScript Bundle -->
+	<script src="js/jquery.bundle.js"></script>
+	<!-- Theme Script init() -->
+	<script src="js/script.js"></script>
+	<!-- End script -->
+</body>
+
+</html>

@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <title>
+    Ankit Panchal & Associates- Financial Services and Business Consulting
+    Template
+  </title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="image/Logomain.png" type="image/png" sizes="16x16" />
+  <link rel="stylesheet" type="text/css" href="css/vendor.bundle.css" />
+  <link id="style-css" rel="stylesheet" type="text/css" href="css/styles.css" />
+  <style type="text/css">
+    /* Only Demo Purpose */
+    .colorPanel {
+      margin: 0px;
+      padding: 5px;
+      position: fixed;
+      z-index: 100;
+      min-width: 20px;
+      border-radius: 0 3px 3px 0;
+      background-color: #4b00a0;
+      top: 35%;
+      text-align: center;
+    }
+
+    .colorPanel ul {
+      margin: 0px;
+      padding: 0px;
+      list-style: none;
+      display: none;
+    }
+
+    .colorPanel ul li {
+      display: block;
+      margin-top: 10px;
+    }
+
+    .colorPanel ul a {
+      display: block;
+      margin: 0 auto;
+      width: 20px;
+      height: 20px;
+      border: #fff 1px solid;
+    }
+
+    .colorPanel a.cart,
+    .colorPanel a.home-solid {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      margin-bottom: 6px;
+      padding-bottom: 8px;
+      display: block;
+    }
+
+    .colorPanel a.home-solid i {
+      display: block;
+      margin: 12px auto 4px;
+    }
+
+    .colorPanel a.home-solid {
+      color: #fff;
+      font-weight: bold;
+      font-size: 9px;
+      text-transform: uppercase;
+    }
+
+    #cpToggle {
+      display: block;
+      height: 30px;
+      margin: 0 auto;
+      width: 28px;
+      line-height: 30px;
+      background-size: cover;
+    }
+
+    .cp-custom {
+      padding: 12px;
+    }
+
+    .cp-custom #cpToggle {
+      background: none;
+    }
+
+    .cp-custom i {
+      font-size: 15px;
+      color: #fff;
+    }
+
+    /* Hide any extra logos inside the brand (keep only the first image) */
+    .navbar.navbar-primary .navbar-brand .logo:not(:first-of-type) {
+      display: none !important;
+    }
+
+    /* Size the visible (first) logo */
+    .navbar.navbar-primary .navbar-brand .logo:first-of-type {
+      display: inline-block !important;
+      height: 80px !important;
+      /* desktop size */
+      width: auto !important;
+      max-height: none !important;
+    }
+
+    /* Mobile/tablet size */
+    @media (max-width: 991.98px) {
+      .navbar.navbar-primary .navbar-brand .logo:first-of-type {
+        height: 52px !important;
+      }
+    }
+
+    @media (max-width: 991.98px) {
+      .navbar.navbar-primary .navbar-brand .logo {
+        height: 52px;
+      }
+    }
+
+    .banner .fill {
+      position: relative;
+    }
+
+    /* Full-cover black overlay (adjust opacity as needed) */
+    .banner .fill .overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.25);
+      /* 0.45 = 45% black */
+      pointer-events: none;
+      /* clicks pass through */
+    }
+
+    /* Keep text above the overlay */
+    .banner .banner-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .section-services .feature-row.feature-service-row {
+      background: #fff;
+      /* so the shadow looks solid */
+      box-shadow: 0 14px 36px rgba(0, 0, 0, 0.12);
+      padding: 16px;
+      /* keeps cards off the rounded edge */
+    }
+  </style>
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i["GoogleAnalyticsObject"] = r;
+      (i[r] =
+        i[r] ||
+        function () {
+          (i[r].q = i[r].q || []).push(arguments);
+        }),
+        (i[r].l = 1 * new Date());
+      (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m);
+    })(
+      window,
+      document,
+      "script",
+      "../../www.google-analytics.com/analytics.js",
+      "ga"
+    );
+
+    ga("create", "UA-91615293-2", "auto");
+    ga("send", "pageview");
+  </script>
+</head>
+
+<body class="site-body style-v1">
+  <!-- Header -->
+
+  <div data-include="header"></div>
+  <script src="partials/include-header.js" data-header-src="partials/header.html"></script>
+  <div id="slider" class="banner banner-slider slider-large carousel slide carousel-fade">
+    <div class="carousel-inner">
+      <div class="item active">
+        <div class="fill" style="background-image: url('image/slider-lg-a.jpg')">
+          <div class="overlay"></div>
+          <div class="banner-content">
+            <div class="container">
+              <div class="row">
+                <div class="banner-text al-left pos-left light">
+                  <h2>
+                    Helping You Achieve Financial Freedom with Trusted
+                    Planning<strong>.</strong>
+                  </h2>
+                  <p>
+                    Financial Planning, Retirement, Insurance &amp; Loans with
+                    Ankit Panchal – Your Friendly Financial Consultant in
+                    Ahmedabad
+                  </p>
+                  <a href="contact.html" class="btn">Book Your 30-Minute Free Consultation Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.item -->
+
+      <div class="item">
+        <div class="fill" style="background-image: url('image/slider-lg-b.jpg')">
+          <div class="overlay"></div>
+          <div class="banner-content">
+            <div class="container">
+              <div class="row">
+                <div class="banner-text al-left pos-left light">
+                  <h2>Expert Financial Advice<strong>.</strong></h2>
+                  <p>
+                    We help clients find ways to turn into actionable insights
+                    by embedding economics across their organization’s
+                    strategy.
+                  </p>
+                  <a href="contact.html" class="btn">Learn more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.item -->
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#slider" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#slider" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <div class="section section-services">
+    <div class="container">
+      <div class="content row">
+        <!-- Feature Row  -->
+        <div class="feature-row feature-service-row row feature-s4 off-text boxed-filled boxed-w">
+          <div class="heading-box clearfix">
+            <div class="col-sm-3">
+              <h2 class="heading-section" style="color: #253157">
+                Financial Specialists
+              </h2>
+            </div>
+            <div class="col-sm-8 col-sm-offset-1">
+              <span>12+ Years of experience, transparent advice, and personalized
+                planning to help you reach your goals.</span>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-6 even">
+            <!-- Feature box -->
+            <div class="feature">
+              <a href="Retirement.html">
+                <div class="fbox-photo">
+                  <img src="image/photo-pt-a.jpg" alt="" />
+                </div>
+                <div class="fbox-over">
+                  <h3 class="title">Retirement Planning</h3>
+                  <div class="fbox-content">
+                    <p>
+                      Retire with confidence through a clear, step-by-step
+                      plan for financial independence.
+                    </p>
+                    <span class="btn">Learn More</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- End Feature box -->
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-6 odd">
+            <!-- Feature box -->
+            <div class="feature">
+              <a href="insurance.html">
+                <div class="fbox-photo">
+                  <img src="image/photo-pt-b.jpg" alt="" />
+                </div>
+                <div class="fbox-over">
+                  <h3 class="title">Insurance Planning</h3>
+                  <div class="fbox-content">
+                    <p>
+                      From health to life cover, simplify choices and stay
+                      protected without overpaying.
+                    </p>
+                    <span class="btn">Learn More</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- End Feature box -->
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-6 even">
+            <!-- Feature box -->
+            <div class="feature">
+              <a href="Investment.html">
+                <div class="fbox-photo">
+                  <img src="image/photo-pt-c.jpg" alt="" />
+                </div>
+                <div class="fbox-over">
+                  <h3 class="title">Investment Planning</h3>
+                  <div class="fbox-content">
+                    <p>
+                      Invest wisely across mutual funds and equities,
+                      balancing risk and reward to grow wealth.
+                    </p>
+                    <span class="btn">Learn More</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- End Feature box -->
+          </div>
+
+          <div class="col-md-3 col-sm-6 col-xs-6 odd">
+            <!-- Feature box -->
+            <div class="feature">
+              <a href="Loan.html">
+                <div class="fbox-photo">
+                  <img src="image/photo-pt-d.jpg" alt="" />
+                </div>
+                <div class="fbox-over">
+                  <h3 class="title">Loan Advisory</h3>
+                  <div class="fbox-content">
+                    <p>
+                      Smart guidance on home, personal, and business loans to
+                      save money and reduce stress.
+                    </p>
+                    <span class="btn">Learn More</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- End Feature box -->
+          </div>
+        </div>
+        <!-- Feture Row  #end -->
+      </div>
+    </div>
+  </div>
+  <!-- End Section -->
+
+  <!-- Content -->
+  <div class="section section-content section-pad">
+    <div class="container">
+      <div class="content row">
+        <div class="row row-vm">
+          <div class="col-md-6 res-m-bttm">
+            <h5 class="heading-sm-lead" style="color: #000000">About us</h5>
+            <h2 class="heading-section" style="color: #000000">Who we are</h2>
+            <p style="color: #253157">
+              I’m <strong>Ankit Panchal</strong>, a friendly, transparent
+              financial consultant based in Ahmedabad, Gujarat.
+            </p>
+            <p style="color: #253157">
+              My mission is simple: give clear, trustworthy, and practical
+              guidance so families and small businesses can plan confidently
+              for today and tomorrow.
+            </p>
+            <p style="color: #253157">
+              Over the years, I’ve helped 400+ clients with Retirement,
+              insurance, investments, loans, and tax planning—always tailored
+              to each person’s goals and comfort with risk. You’ll get
+              unbiased advice, easy-to-understand plans, and a partner who
+              cares about your long-term peace of mind.
+            </p>
+          </div>
+          <div class="col-md-5 col-md-offset-1">
+            <img class="no-round" src="image/Ankitpanchal.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Content -->
+
+  <!-- Content -->
+  <div class="section section-contents section-pad image-on-right bg-light">
+    <div class="container">
+      <div class="row">
+        <h5 class="heading-sm-lead" style="color: #253157">Our Services</h5>
+        <h2 class="heading-section" style="color: #253157">What we do</h2>
+        <div class="feature-intro">
+          <div class="row">
+            <div class="col-sm-7 col-md-6">
+              <div class="row">
+                <div class="col-sm-6 res-s-bttm">
+                  <div class="icon-box style-s1 photo-plx-full">
+                    <em class="fa fa-bar-chart-o" aria-hidden="true"></em>
+                  </div>
+                  <h4 style="color: #253157">Retirement Planning</h4>
+                  <p>
+                    Create a clear, step-by-step plan so you can retire with
+                    confidence and financial independence.
+                  </p>
+                </div>
+                <div class="col-sm-6">
+                  <div class="icon-box style-s1">
+                    <em class="fa fa-users" aria-hidden="true"></em>
+                  </div>
+                  <h4 style="color: #253157">Insurance Planning</h4>
+                  <p>
+                    Simplify health & life cover choices so you’re protected
+                    without overpaying.
+                  </p>
+                </div>
+                <div class="gaps size-lg"></div>
+                <div class="col-sm-6 res-s-bttm">
+                  <div class="icon-box style-s1">
+                    <em class="fa fa-credit-card" aria-hidden="true"></em>
+                  </div>
+                  <h4 style="color: #253157">Loan Advisory</h4>
+                  <p>
+                    Smart guidance on home, personal, and business loans to
+                    save money and reduce stress.
+                  </p>
+                </div>
+                <div class="col-sm-6">
+                  <div class="icon-box style-s1">
+                    <em class="fa fa-trademark" aria-hidden="true"></em>
+                  </div>
+                  <h4 style="color: #253157">Tax Planning</h4>
+                  <p>
+                    Use the right strategies so you save more and stay
+                    compliant.
+                  </p>
+                </div>
+                <div class="gaps size-lg"></div>
+                <div class="col-sm-6">
+                  <div class="icon-box style-s1">
+                    <em class="fa fa-trademark" aria-hidden="true"></em>
+                  </div>
+                  <h4 style="color: #253157">Children’s Education Planning</h4>
+                  <p>
+                    Prepare financially for school, college, and higher
+                    education so nothing stands in their way.
+                  </p>
+                </div>
+                <div class="col-sm-6">
+                  <div class="icon-box style-s1">
+                    <em class="fa fa-trademark" aria-hidden="true"></em>
+                  </div>
+                  <h4 style="color: #253157">Investment Planning</h4>
+                  <p>
+                    Invest wisely across mutual funds, equities, and more
+                    balancing risk and reward to grow wealth.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-bg imagebg" style="opacity: 1">
+      <img src="image/photo-half-a.jpg" alt="" />
+    </div>
+  </div>
+  <!-- End Content -->
+
+  <!-- Testimonials -->
+  <div class="section section-quotes section-pad">
+    <div class="container">
+      <div class="content row">
+        <div class="col-md-offset-2 col-md-8 center">
+          <h5 class="heading-sm-lead" style="color: #253157">
+            The People Say
+          </h5>
+          <h2 class="heading-section" style="color: #253157">Testimonials</h2>
+        </div>
+        <div class="gaps"></div>
+
+        <div class="testimonials">
+          <div id="testimonial" class="quotes-slider col-md-8 col-md-offset-2">
+            <div class="owl-carousel loop has-carousel" data-items="1" data-loop="true" data-dots="true"
+              data-auto="true">
+              <!-- Slide 1: Bhavesh Suthar -->
+              <div class="item">
+                <div class="quotes">
+                  <div class="quotes-text center">
+                    <p>
+                      From Bhavesh Suthar: I am very thankful to Mr. Ankit
+                      Panchal for helping me with my investments in India. He
+                      is a knowledgeable and professional financial consultant
+                      and broker. He clearly explained various investment
+                      options and guided me to choose the best one that suits
+                      my needs. He provides excellent service and regularly
+                      reviews my portfolio. He handles everything smoothly, so
+                      I don’t have to worry about any details. I truly
+                      appreciate his honest advice and dedicated support. I
+                      highly recommend his services to anyone looking for a
+                      reliable financial advisor. — Bhavesh
+                    </p>
+                  </div>
+                  <div class="profile">
+                    <img src="image/Bhavesh.png" alt="" />
+                    <h5>Bhavesh Suthar</h5>
+                    <h6></h6>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 2: Dr. Anil Mahato -->
+              <div class="item">
+                <div class="quotes">
+                  <div class="quotes-text center">
+                    <p>
+                      "Ankit’s advice helped me secure the right loan and
+                      insurance options that fit my needs perfectly. He is not
+                      just knowledgeable but also very approachable and
+                      trustworthy. With his guidance, managing my finances
+                      feels less overwhelming and more empowering. Highly
+                      recommend for anyone looking to build a secure financial
+                      future!"
+                    </p>
+                  </div>
+                  <div class="profile">
+                    <img src="image/doctor.jpg" alt="" />
+                    <h5>Dr. Anil Mahato</h5>
+                    <h6></h6>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 3: Hiren Joshi -->
+              <div class="item">
+                <div class="quotes">
+                  <div class="quotes-text center">
+                    <p>
+                      "I never thought financial planning could be so simple
+                      and reassuring until I met Ankit. He patiently
+                      understood my goals and explained each step clearly
+                      without jargon. Thanks to his personalized approach, I
+                      feel confident about my Retirement and insurance plans.
+                      His support has truly made a difference for me and my
+                      family."
+                    </p>
+                  </div>
+                  <div class="profile">
+                    <img src="image/Hiren.jpg" alt="" />
+                    <h5>Hiren Joshi</h5>
+                    <h6></h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End carousel -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- End Section -->
+
+  <!-- Content -->
+  <div class="section section-contents section-pad has-bg fixed-bg light bg-alternet">
+    <div class="container">
+      <div class="row">
+        <div class="row">
+          <div class="col-md-4 pad-r res-m-bttm">
+            <h2 class="heading-lead">
+              <strong>Clear advice, grounded in research.</strong>
+            </h2>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-sm-6 res-s-bttm">
+                <div class="icon-box style-s4 photo-plx-full">
+                  <em class="fa fa-bar-chart-o" aria-hidden="true"></em>
+                </div>
+                <h4>Experienced</h4>
+                <p>
+                  Financial consultant with 12+ years and 400+ clients across
+                  Gujarat.
+                </p>
+              </div>
+              <div class="col-sm-6">
+                <div class="icon-box style-s4">
+                  <em class="fa fa-users" aria-hidden="true"></em>
+                </div>
+                <h4>Transparent</h4>
+                <p>
+                  Trust & Transparency — I explain everything in plain
+                  language with unbiased advice.
+                </p>
+              </div>
+              <div class="gaps size-lg"></div>
+              <div class="col-sm-6 res-s-bttm">
+                <div class="icon-box style-s4">
+                  <em class="fa fa-credit-card" aria-hidden="true"></em>
+                </div>
+                <h4>Professional</h4>
+                <p>
+                  Clear, practical guidance you can actually use in daily
+                  life.
+                </p>
+              </div>
+              <div class="col-sm-6">
+                <div class="icon-box style-s4">
+                  <em class="fa fa-trademark" aria-hidden="true"></em>
+                </div>
+                <h4>Local Expertise</h4>
+                <p>
+                  Ahmedabad–Gujarat insights that fit our community and
+                  context.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-bg imagebg">
+      <img src="image/plx-full.jpg" alt="" />
+    </div>
+  </div>
+  <!-- End Content -->
+  <!-- Teams -->
+  <!-- <div class="section section-teams section-pad bdr-bottom">
+      <div class="container">
+        <div class="content row">
+          <div class="col-md-offset-2 col-md-8 center">
+            <h5 class="heading-sm-lead">The Team</h5>
+            <h2 class="heading-section">Our Advisors</h2>
+          </div>
+          <div class="gaps"></div>
+          <div class="team-member-row row">
+            <div class="col-md-3 col-sm-6 col-xs-6 even">
+            
+              <div class="team-member">
+                <div class="team-photo">
+                  <img alt="" src="image/team-a.jpg" />
+                </div>
+                <div class="team-info center">
+                  <h4 class="name">Robert Miller</h4>
+                  <p class="sub-title">Managing Director &amp; CEO</p>
+                </div>
+              </div>
+            
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6 odd">
+            
+              <div class="team-member">
+                <div class="team-photo">
+                  <img alt="" src="image/team-b.jpg" />
+                </div>
+                <div class="team-info center">
+                  <h4 class="name">Stephen Everett</h4>
+                  <p class="sub-title">Chief Financial Officer</p>
+                </div>
+              </div>
+            
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6 even">
+         
+              <div class="team-member">
+                <div class="team-photo">
+                  <img alt="" src="image/team-c.jpg" />
+                </div>
+                <div class="team-info center">
+                  <h4 class="name">Philip Hennessy</h4>
+                  <p class="sub-title">Senior Tax Specialist</p>
+                </div>
+              </div>
+            
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6 odd">
+             
+              <div class="team-member">
+                <div class="team-photo">
+                  <img alt="" src="image/team-d.jpg" />
+                </div>
+                <div class="team-info center">
+                  <h4 class="name">Robert Miller</h4>
+                  <p class="sub-title">Chief Financial Advisor</p>
+                </div>
+              </div>
+         
+            </div>
+          </div>
+        
+        </div>
+      </div>
+    </div> -->
+  <div class="section section-news section-pad">
+    <div class="container">
+      <h5 class="heading-sm-lead center" style="color: #253157;">Resources</h5>
+      <h2 class="heading-section center" style="color: #253157;">Blogs</h2>
+      <div class="row blog-posts">
+        <div class="post post-loop col-md-4">
+          <div class="post-thumbs">
+            <a href="blog-Retirement.html"><img src="image/post-thumb-a.jpg" alt="Retirement Blog" /></a>
+          </div>
+          <div class="post-entry">
+            <h2>
+              <a href="blog-Retirement.html" style="color: #253157;">Top 5 Retirement Planning Tips in Gujarat</a>
+            </h2>
+            <p>
+              Start early, diversify, plan for healthcare, clear loans, and
+              review regularly to secure your golden years.
+            </p>
+            <a class="btn btn-alt btn-sm" href="blog-Retirement.html">Read More</a>
+          </div>
+        </div>
+
+        <div class="post post-loop col-md-4">
+          <div class="post-thumbs">
+            <a href="blog-health-insurance.html"><img src="image/post-thumb-b.jpg" alt="Health Insurance Blog" /></a>
+          </div>
+          <div class="post-entry">
+            <h2>
+              <a href="blog-health-insurance.html" style="color: #253157;">How to Choose the Right Health Insurance in
+                India</a>
+            </h2>
+            <p>
+              Don’t just pick the cheapest premium—look at coverage,
+              hospitals, and riders. Choose wisely with confidence.
+            </p>
+            <a class="btn btn-alt btn-sm" href="blog-health-insurance.html">Read More</a>
+          </div>
+        </div>
+
+        <div class="post post-loop col-md-4">
+          <div class="post-thumbs">
+            <a href="blog-tax-2025.html"><img src="image/post-thumb-c.jpg" alt="Union Budget Blog" /></a>
+          </div>
+          <div class="post-entry">
+            <h2>
+              <a href="blog-tax-2025.html" style="color: #253157;">What the Union Budget 2025 Means for Taxpayers</a>
+            </h2>
+            <p>
+              Revised slabs, green investment benefits, and digital tax
+              incentives—see how this year’s budget impacts you.
+            </p>
+            <a class="btn btn-alt btn-sm" href="blog-tax-2025.html">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="call-action cta-small has-bg bg-primary" style="background-image: url('image/plx-cta.jpg')">
+    <div class="cta-block">
+      <div class="container">
+        <div class="content row">
+          <div class="cta-sameline">
+            <h2>Have any Question?</h2>
+            <p>We're here to help. Send us an email or call us at <a style="text-decoration: none;"
+                href="tel:+919876543210">+91 98765 43210</a>.
+              Please feel free to contact our expert.</p>
+            <a class="btn btn-alt" href="contact.html">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Section -->
+  <div data-include="footer"></div>
+  <script src="partials/include-footer.js" data-footer-src="partials/footer.html"></script>
+
+  <!-- Rreload Image for Slider -->
+  <div class="preload hide">
+    <img alt="" src="image/slider-lg-a.jpg" />
+    <img alt="" src="image/slider-lg-b.jpg" />
+  </div>
+  <!-- End -->
+
+  <!-- Preloader !active please if you want -->
+  <!-- <div id="preloader"><div id="status">&nbsp;</div></div> -->
+  <!-- Preloader End -->
+
+  <!-- JavaScript Bundle -->
+  <script src="js/jquery.bundle.js"></script>
+  <!-- Theme Script init() -->
+  <script src="js/script.js"></script>
+  <!-- End script -->
+</body>
+
+</html>

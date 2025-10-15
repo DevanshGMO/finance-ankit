@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <title>
+    Contact | Finance Corp - Financial Services and Business Consulting
+    Template
+  </title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="image/Logomain.png" type="image/png" sizes="16x16" />
+  <link rel="stylesheet" type="text/css" href="css/vendor.bundle.css" />
+  <link id="style-css" rel="stylesheet" type="text/css" href="css/styles.css" />
+  <style type="text/css">
+    /* Only Demo Purpose */
+    .colorPanel {
+      margin: 0px;
+      padding: 5px;
+      position: fixed;
+      z-index: 100;
+      min-width: 20px;
+      border-radius: 0 3px 3px 0;
+      background-color: #4b00a0;
+      top: 35%;
+      text-align: center;
+    }
+
+    .colorPanel ul {
+      margin: 0px;
+      padding: 0px;
+      list-style: none;
+      display: none;
+    }
+
+    .colorPanel ul li {
+      display: block;
+      margin-top: 10px;
+    }
+
+    .colorPanel ul a {
+      display: block;
+      margin: 0 auto;
+      width: 20px;
+      height: 20px;
+      border: #fff 1px solid;
+    }
+
+    .colorPanel a.cart,
+    .colorPanel a.home-solid {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      margin-bottom: 6px;
+      padding-bottom: 8px;
+      display: block;
+    }
+
+    .colorPanel a.home-solid i {
+      display: block;
+      margin: 12px auto 4px;
+    }
+
+    .colorPanel a.home-solid {
+      color: #fff;
+      font-weight: medium;
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+
+    #cpToggle {
+      display: block;
+      height: 30px;
+      margin: 0 auto;
+      width: 28px;
+      line-height: 30px;
+      background-size: cover;
+    }
+
+    .cp-custom {
+      padding: 12px;
+    }
+
+    .cp-custom #cpToggle {
+      background: none;
+    }
+
+    .cp-custom i {
+      font-size: 15px;
+      color: #fff;
+    }
+
+    /* Drop this near your form styles */
+    .form-checkboxes {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px 24px;
+    }
+
+    /* ≥576px: 2 columns; ≥992px: 3 columns */
+    @media (min-width: 576px) {
+      .form-checkboxes {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (min-width: 992px) {
+      .form-checkboxes {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+
+    .check {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      cursor: pointer;
+      font-weight: 600;
+      /* matches your screenshot weight */
+      line-height: 1.35;
+      /* tidy wrapping for long labels */
+      user-select: none;
+    }
+
+    .check input {
+      margin-top: 3px;
+      /* aligns checkbox with first line of text */
+    }
+
+    .check span {
+      display: inline-block;
+      color: #2a3342;
+      /* adjust to your theme; keeps it readable */
+    }
+
+    .check input:focus-visible {
+      outline: 2px solid #16a34a;
+      outline-offset: 2px;
+    }
+
+    /* Hide any extra logos inside the brand (keep only the first image) */
+    .navbar.navbar-primary .navbar-brand .logo:not(:first-of-type) {
+      display: none !important;
+    }
+
+    /* Size the visible (first) logo */
+    .navbar.navbar-primary .navbar-brand .logo:first-of-type {
+      display: inline-block !important;
+      height: 80px !important;
+      /* desktop size */
+      width: auto !important;
+      max-height: none !important;
+    }
+
+    /* Mobile/tablet size */
+    @media (max-width: 991.98px) {
+      .navbar.navbar-primary .navbar-brand .logo:first-of-type {
+        height: 52px !important;
+      }
+    }
+
+    @media (max-width: 991.98px) {
+      .navbar.navbar-primary .navbar-brand .logo {
+        height: 52px;
+      }
+    }
+
+    /* Overall spacing & typography */
+    .section-contact .heading-lg {
+      margin-bottom: 6px;
+    }
+
+    .section-contact p {
+      color: #6b7280;
+    }
+
+    /* Inputs */
+    .section-contact .form-control,
+    .section-contact .txtarea {
+      height: 48px;
+      padding: 10px 14px;
+      font-size: 15px;
+      line-height: 1.3;
+      border: 1px solid #e5e7eb;
+      border-radius: 6px;
+      box-shadow: none;
+      width: 100%;
+    }
+
+    .section-contact .txtarea {
+      height: 160px;
+      resize: vertical;
+    }
+
+    /* Field spacing */
+    .section-contact .form-group {
+      margin-bottom: 18px;
+    }
+
+    .section-contact .form-field {
+      margin-bottom: 14px;
+    }
+
+    /* Services heading */
+    .section-contact h4 {
+      font-size: 16px;
+      font-weight: 700;
+      margin: 12px 0 10px;
+    }
+
+    /* Services grid */
+    .section-contact .form-checkboxes {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px 24px;
+      align-items: start;
+    }
+
+    /* Tablet */
+    @media (max-width: 991.98px) {
+      .section-contact .form-checkboxes {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    /* Mobile */
+    @media (max-width: 575.98px) {
+      .section-contact .form-checkboxes {
+        grid-template-columns: 1fr;
+        gap: 10px 16px;
+      }
+    }
+
+    /* Checkbox label block for bigger click target */
+    .section-contact .form-checkboxes .check {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0;
+      /* grid handles spacing */
+      cursor: pointer;
+      user-select: none;
+      font-weight: 600;
+      color: #111827;
+    }
+
+    .section-contact .form-checkboxes .check input[type="checkbox"] {
+      width: 18px;
+      height: 18px;
+      margin: 0;
+      accent-color: #17b2d0;
+      /* modern browsers */
+    }
+
+    .section-contact .form-checkboxes .check span {
+      line-height: 1.3;
+    }
+
+    /* Submit button */
+    .section-contact .btn {
+      background: #17b2d0;
+      border: 1px solid #17b2d0;
+      color: #fff;
+      height: 44px;
+      padding: 0 22px;
+      border-radius: 24px;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+    }
+
+    .section-contact .btn:hover {
+      filter: brightness(0.95);
+    }
+
+    /* Right column list */
+    .section-contact .contact-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .section-contact .contact-list li {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+
+    .section-contact .contact-list em {
+      color: #17b2d0;
+    }
+  </style>
+
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i["GoogleAnalyticsObject"] = r;
+      (i[r] =
+        i[r] ||
+        function () {
+          (i[r].q = i[r].q || []).push(arguments);
+        }),
+        (i[r].l = 1 * new Date());
+      (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m);
+    })(
+      window,
+      document,
+      "script",
+      "../../www.google-analytics.com/analytics.js",
+      "ga"
+    );
+
+    ga("create", "UA-91615293-2", "auto");
+    ga("send", "pageview");
+  </script>
+</head>
+
+<body class="site-body style-v1">
+  <div data-include="header"></div>
+  <script src="partials/include-header.js" data-header-src="partials/header.html"></script>
+  <div class="banner banner-static" style="opacity: 1">
+    <div class="banner-cpn">
+      <div class="container">
+        <div class="content row">
+          <div class="banner-text">
+            <h1 class="page-title">Contact Us</h1>
+            <p>
+              Clear, trustworthy guidance for confident futures. Personalized plans, rooted in Ahmedabad & Gujarat.
+            </p>
+          </div>
+          <div class="page-breadcrumb">
+            <ul class="breadcrumb">
+              <li><a href="index.html">Home</a></li>
+              <li class="active"><span>Contact Us</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="banner-bg imagebg">
+      <img src="image/banner-inside-a.jpg" alt="" />
+    </div>
+  </div>
+  <div class="section section-contents section-contact section-pad">
+    <div class="container">
+      <div class="content row">
+        <h2 class="heading-lg" style="color: #253157;">Contact Us</h2>
+
+        <div class="contact-content row">
+          <!-- LEFT: FORM -->
+          <div class="drop-message col-md-7 res-m-bttm">
+            <p style="color: #253157;">
+              Have a question or ready to start planning your financial
+              future? I’d love to connect.
+            </p>
+
+            <form id="quote-request" class="form-quote" action="contact-send.php" method="post" novalidate>
+              <div class="form-group row">
+                <div class="form-field col-md-6 form-m-bttm">
+                  <input name="quote-request-name" type="text" placeholder="Name *" class="form-control required"
+                    required aria-label="Name" />
+                </div>
+                <div class="form-field col-md-6">
+                  <input name="quote-request-company" type="text" placeholder="Company (optional)" class="form-control"
+                    aria-label="Company" />
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <div class="form-field col-md-6 form-m-bttm">
+                  <input name="quote-request-email" type="email" placeholder="Email *"
+                    class="form-control required email" required aria-label="Email" />
+                </div>
+                <div class="form-field col-md-6">
+                  <input name="quote-request-phone" type="tel" placeholder="Phone *" class="form-control required"
+                    required aria-label="Phone" />
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="form-field col-md-12">
+                  <textarea name="quote-request-message" placeholder="Message *" class="txtarea form-control required"
+                    required aria-label="Message"></textarea>
+                </div>
+              </div>
+
+              <input type="text" class="hidden" name="form-anti-honeypot" value="" />
+              <button type="submit" class="btn" style="background-color: #253157; border: #253157;">Submit</button>
+              <div class="form-results"></div>
+            </form>
+          </div>
+
+          <!-- RIGHT: DETAILS -->
+          <div class="contact-details col-md-4 col-md-offset-1">
+            <ul class="contact-list" style="list-style: none; padding: 0; margin: 0">
+              <!-- Location -->
+              <li style="
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    margin-bottom: 10px;
+                  ">
+                <em class="fa fa-map" aria-hidden="true" style="
+                      color: #253157;
+                      font-size: 18px;
+                      width: 22px;
+                      text-align: center;
+                    "></em>
+                <span style="color: #374151">Ahmedabad, Gujarat</span>
+              </li>
+
+              <!-- Phone -->
+              <li style="
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    margin-bottom: 10px;
+                  ">
+                <em class="fa fa-phone" aria-hidden="true" style="
+                      color: #253157;
+                      font-size: 18px;
+                      width: 22px;
+                      text-align: center;
+                    "></em>
+
+                <span style="
+                      white-space: nowrap;
+                      color: #6b7280;
+                      font-weight: 600;
+                    ">Phone:</span>
+
+                <a href="tel:+919876543210" style="
+                      text-decoration: none;
+                      color: #0f172a;
+                      white-space: nowrap;
+                    ">
+                  +91 98765 43210
+                </a>
+              </li>
+
+              <li style="
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    margin-bottom: 10px;
+                  ">
+                <em class="fa fa-envelope" aria-hidden="true" style="
+                      color: #253157;
+                      font-size: 18px;
+                      width: 22px;
+                      text-align: center;
+                    "></em>
+
+                <span style="color: #0f172a; white-space: nowrap">Email:</span>
+
+                <a href="mailto:info@ankitpanchalfinance.com" style="
+                      text-decoration: none;
+                      color: #0f172a;
+                      white-space: nowrap;
+                    ">
+                  info@ankitpanchalfinance.com
+                </a>
+              </li>
+
+              <!-- Socials -->
+              <li style="
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    margin-bottom: 0;
+                  ">
+                <em class="fa fa-share-alt" aria-hidden="true" style="
+                      color: #253157;
+                      font-size: 18px;
+                      width: 22px;
+                      text-align: center;
+                    "></em>
+                <span>
+                  <a href="#" aria-label="LinkedIn" style="text-decoration: none; color: #0f172a">LinkedIn</a>
+                  &nbsp;·&nbsp;
+                  <a href="#" aria-label="Facebook" style="text-decoration: none; color: #0f172a">Facebook</a>
+                  &nbsp;·&nbsp;
+                  <a href="#" aria-label="Instagram" style="text-decoration: none; color: #0f172a">Instagram</a>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- .contact-content -->
+      </div>
+    </div>
+  </div>
+
+  <!-- End Content -->
+
+  <!-- Map with pinned office card -->
+  <div style="
+        position: relative;
+        width: 100%;
+        height: 520px;
+        border-radius: 10px;
+        overflow: hidden;
+      ">
+    <!-- Google Map (pinned to the address) -->
+    <iframe title="Ankit Panchal & Associates — Location"
+      src="https://www.google.com/maps?q=F%2F23%2C%20Vikram%20Plaza%20Complex%2C%20Opp.%20Vishwakarma%20Temple%2C%20Chanlodiya%2C%20Ahmedabad&output=embed"
+      style="
+          position: absolute;
+          inset: 0;
+          width: 100%;
+          height: 100%;
+          border: 0;
+        " loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+
+    <!-- Overlay Card (like your example) -->
+    <div id="office-card" style="
+          position: absolute;
+          left: 16px;
+          top: 16px;
+          width: 380px;
+          max-width: 92vw;
+          background: #ffffff;
+          border-radius: 10px;
+          box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+          overflow: hidden;
+          font-family: inherit;
+        ">
+      <!-- Card header -->
+      <div style="
+            background: #253157; color: #fff; padding: 16px 18px; font-weight: 700; font-size: 20px; ">
+        Office & Contact
+      </div>
+
+      <!-- Card body -->
+      <div style=" padding: 16px 18px; color: #253157">
+        <!-- Address -->
+        <div style="
+              display: flex;
+              gap: 10px;
+              align-items: flex-start;
+              margin-bottom: 12px;
+            ">
+          <em class="fa fa-map-marker" aria-hidden="true" style="
+                color: #253157;
+                font-size: 18px;
+                width: 22px;
+                text-align: center;
+                line-height: 1.4;
+              "></em>
+          <div style="line-height: 1.5">
+            <div style="font-weight: 700; color: #374151; margin-bottom: 2px">
+              Address
+            </div>
+            <div>
+              F/23, Vikram Plaza Complex,<br />Opp. Vishwakarma Temple,<br />Chanlodiya,
+              Ahmedabad
+            </div>
+          </div>
+        </div>
+
+        <!-- Phone -->
+        <div style="
+              display: flex;
+              gap: 10px;
+              align-items: center;
+              margin-bottom: 12px;
+            ">
+          <em class="fa fa-phone" aria-hidden="true" style="
+                color: #253157;
+                font-size: 18px;
+                width: 22px;
+                text-align: center;
+              "></em>
+          <div>
+            <span style="font-weight: 700; color: #253157; margin-right: 6px">Phone:</span>
+            <a href="tel:+919876543210" style="text-decoration: none; color: #253157">+91 98765 43210</a>
+          </div>
+        </div>
+
+        <!-- Email -->
+        <div style="
+              display: flex;
+              gap: 10px;
+              align-items: center;
+              margin-bottom: 12px;
+            ">
+          <em class="fa fa-envelope" aria-hidden="true" style="
+                color: #253157;
+                font-size: 18px;
+                width: 22px;
+                text-align: center;
+              "></em>
+          <div>
+            <span style="font-weight: 700; color: #253157; margin-right: 6px">Email:</span>
+            <a href="mailto:info@ankitpanchalfinance.com" style="
+                  text-decoration: none;
+                  color: #253157;
+                  white-space: nowrap;
+                ">info@ankitpanchalfinance.com</a>
+          </div>
+        </div>
+
+        <!-- Actions -->
+        <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 8px">
+          <a href="https://www.google.com/maps?q=F%2F23%2C%20Vikram%20Plaza%20Complex%2C%20Opp.%20Vishwakarma%20Temple%2C%20Chanlodiya%2C%20Ahmedabad"
+            target="_blank" rel="noopener" style="
+                display: inline-block;
+                padding: 8px 12px;
+                background: #253157;
+                color: #fff;
+                border-radius: 8px;
+                text-decoration: none;
+                font-weight: 700;
+              ">
+            Open in Google Maps
+          </a>
+          <a href="https://www.google.com/maps/dir/?api=1&destination=F%2F23%2C%20Vikram%20Plaza%20Complex%2C%20Opp.%20Vishwakarma%20Temple%2C%20Chanlodiya%2C%20Ahmedabad"
+            target="_blank" rel="noopener" style="
+                display: inline-block;
+                padding: 8px 12px;
+                background: #f3f4f6;
+                color: #111827;
+                border-radius: 8px;
+                text-decoration: none;
+                font-weight: 600;
+              ">
+            Directions
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Small responsive tweak -->
+  <style>
+    @media (max-width: 575.98px) {
+      #office-card {
+        left: 8px !important;
+        right: 8px;
+        width: auto !important;
+      }
+    }
+  </style>
+
+  <div data-include="footer"></div>
+  <script src="partials/include-footer.js" data-footer-src="partials/footer.html"></script>
+
+  <!-- Google Map Script -->
+  <script type="text/javascript"
+    src="https://maps.google.com/maps/api/js?key=AIzaSyDNaa8LOQISEST6NIGC78vmdnIOynR2SeU"></script>
+  <script src="js/gmaps.js"></script>
+
+  <!-- JavaScript Bundle -->
+  <script src="js/jquery.bundle.js"></script>
+  <!-- Theme Script init() -->
+  <script src="js/script.js"></script>
+  <!-- End script -->
+</body>
+
+</html>

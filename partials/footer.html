@@ -1,0 +1,161 @@
+<!-- Footer Partial: save as /partials/footer.html -->
+<footer>
+  <div class="footer-widget style-v2 section-pad-md">
+    <div class="container">
+      <div class="row">
+        <div class="widget-row row">
+          <div class="footer-col col-md-3 col-sm-6 res-m-bttm">
+            <!-- Each Widget -->
+            <div class="wgs wgs-footer wgs-text">
+              <div class="wgs-content">
+                <p>
+                  <img class="footer-logo" src="image/Logomain.png" srcset="image/logo2x.png 2x"
+                    alt="Ankit Panchal & Associates" />
+                </p>
+                <p>
+                  Clear, trustworthy, and practical financial guidance from
+                  Ankit Panchal in Ahmedabad, Gujarat—helping families and
+                  professionals make smarter money decisions with transparent,
+                  unbiased advice.
+                </p>
+              </div>
+            </div>
+            <!-- End Widget -->
+          </div>
+          <div class="footer-col col-md-3 col-sm-6 col-md-offset-1 res-m-bttm">
+            <!-- Each Widget -->
+            <div class="wgs wgs-footer wgs-menu">
+              <h5 class="wgs-title" style="color: #253157;">Our Services</h5>
+              <div class="wgs-content">
+                <ul class="menu">
+                  <li><a href="Retirement.html">Retirement Planning</a></li>
+                  <li><a href="insurance.html">Insurance Planning</a></li>
+                  <li><a href="Loan.html">Loan Advisory</a></li>
+                  <li><a href="Investment.html">Investment Planning</a></li>
+                  <li><a href="Tax.html">Tax Planning</a></li>
+                  <li>
+                    <a href="Children.html">Children’s Education Planning</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- End Widget -->
+          </div>
+          <div class="footer-col col-md-2 col-sm-6 res-m-bttm">
+            <!-- Each Widget -->
+            <div class="wgs wgs-footer wgs-menu">
+              <h5 class="wgs-title" style="color: #253157;">Quick Links</h5>
+              <div class="wgs-content">
+                <ul class="menu">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about-us.html">About Us</a></li>
+                  <li><a href="service.html">Services</a></li>
+                  <li><a href="resources.html">Resources</a></li>
+                  <li><a href="consulatant.html">Free Consultation</a></li>
+                  <li><a href="testimonial.html">Testimonial</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- End Widget -->
+          </div>
+
+          <div class="footer-col col-md-3 col-sm-6">
+            <div class="wgs wgs-footer">
+              <h5 class="wgs-title" style="color: #253157;">Newsletter</h5>
+              <div class="wgs-content">
+                <p>
+                  Get practical money tips, tax updates, and planning guides in
+                  your inbox.
+                </p>
+
+                <form class="newsletter-form" action="#" method="post" onsubmit="return false;"
+                  style="margin-top: 10px">
+                  <div class="input-group" style="
+                      display: flex;
+                      align-items: center;
+                      gap: 12px;
+                      max-width: 520px;
+                    ">
+                    <label for="newsletter-email" class="sr-only">Email address</label>
+                    <input type="email" id="newsletter-email" name="email" class="form-control" placeholder="Your email"
+                      required style="
+                        flex: 1 1 auto;
+                        min-width: 0;
+                        height: 48px;
+                        padding: 10px 14px;
+                        font-size: 15px;
+                        line-height: 1.3;
+                        border: 1px solid #e5e7eb;
+                        border-radius: 6px;
+                        box-shadow: none;
+                      " />
+                    <button type="submit" class="btn btn-primary" style="
+                        height: 48px;
+                        padding: 0 22px;
+                        font-weight: 700;
+                        letter-spacing: 0.3px;
+                        border-radius: 28px;
+                        white-space: nowrap;
+                        background: #253157;
+                        border: 1px solid #253157;
+                        color: #fff;
+                      ">
+                      Subscribe
+                    </button>
+                  </div>
+                  <small id="newsletter-msg" aria-live="polite" style="display: block; margin-top: 8px"></small>
+                </form>
+
+                <ul class="social" style="margin-top: 16px">
+                  <li>
+                    <a href="#"><em class="fa fa-linkedin" aria-hidden="true"></em></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Widget Row -->
+      </div>
+    </div>
+  </div>
+  <div class="copyright style-v2">
+    <div class="container">
+      <div class="row">
+        <div class="row">
+          <div class="site-copy col-sm-12">
+            <p style="text-align: center;">
+              &copy; Ankit Panchal &amp; Associates
+              <a href="privacy.html">Policy</a>
+            </p>
+          </div>
+          <!-- <div class="site-by col-sm-5 al-right">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms And Condition</a>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script>
+  (function () {
+    var form = document.querySelector(".newsletter-form");
+    if (!form) return;
+    var email = form.querySelector("#newsletter-email");
+    var msg = form.querySelector("#newsletter-msg");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      if (!email.checkValidity()) {
+        msg.textContent = "Please enter a valid email address.";
+        msg.style.color = "#d9534f";
+        return;
+      }
+      msg.textContent = "Thanks! You are subscribed.";
+      msg.style.color = "#28a745";
+      form.reset();
+    });
+  })();
+</script>
