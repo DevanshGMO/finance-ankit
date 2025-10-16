@@ -209,3 +209,12 @@
       },
     });
 })(jQuery);
+ $(function () {
+    // Toggle only on mobile; keep desktop default behavior
+    $('#mainnav .dropdown > a.dropdown-toggle').on('click', function (e) {
+      if (window.innerWidth < 992) {
+        e.preventDefault();
+        $(this).parent().toggleClass('open').siblings('.open').removeClass('open');
+      }
+    });
+  });

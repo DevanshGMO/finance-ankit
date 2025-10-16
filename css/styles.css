@@ -112,6 +112,7 @@ h5.color-primary,
 h6.color-primary {
   color: #253157;
 }
+
 h1,
 .h1,
 .heading-lg,
@@ -623,7 +624,7 @@ input:focus {
 }
 @media (max-width: 767px) {
   .footer-widget.style-v2 .wgs-text .footer-logo {
-    height: 54px !important;
+    height: 72px !important;
   }
 }
 
@@ -2114,6 +2115,7 @@ form label.error {
 .header-s1.has-fixed .banner {
   margin-top: 76px;
 }
+
 .header-s1.header-dark .topbar {
   background: #007e42;
   color: #fff;
@@ -2151,6 +2153,68 @@ form label.error {
     height: 40px;
   }
 }
+ :root{
+    --nav-bg:#1f2d4a;        /* main dark blue */
+    --nav-bg-2:#223153;      /* submenu dark blue */
+    --nav-text:#fff;
+    --nav-text-2:rgba(255,255,255,.9);
+    --nav-div:rgba(255,255,255,.12);
+  }
+
+  /* Make collapsed menu use our colors and remove gaps */
+  @media (max-width:991px){
+    .navbar-primary .navbar-collapse{ background:var(--nav-bg); margin:0; padding:0; }
+
+    #mainnav .nav{ float:none !important; margin:0; }
+    #mainnav .nav>li{ float:none; }
+    #mainnav .nav>li>a{
+      color:var(--nav-text);
+      background:transparent !important;   /* kill the white bar */
+      padding:14px 18px;
+      border-top:1px solid var(--nav-div);
+    }
+    #mainnav .nav>li:first-child>a{ border-top:none; }
+
+    /* remove any pseudo lines/bullets some themes add */
+    #mainnav .dropdown-toggle::before,
+    #mainnav .dropdown-toggle::after{ display:none !important; }
+
+    /* submenu: full-width, same palette, NO top margin */
+    #mainnav .dropdown-menu{
+      position:static; float:none;
+      display:none; width:auto;
+      margin:0 !important; padding:0;
+      background:var(--nav-bg-2);
+      border:0; border-radius:0; box-shadow:none;
+    }
+    #mainnav .open > .dropdown-menu{ display:block; }
+
+    #mainnav .dropdown-menu>li>a{
+      color:var(--nav-text-2);
+      padding:12px 28px;
+      border-top:1px solid var(--nav-div);
+      background:transparent !important;
+    }
+
+    /* caret color */
+    #mainnav .dropdown-toggle .caret{
+      border-top-color:var(--nav-text);
+      border-bottom-color:var(--nav-text);
+    }
+  }
+   @media (max-width: 991px){
+    /* Contact item in the nav list */
+    #mainnav li.quote-btn > a,
+    #mainnav .quote-btn .btn{
+      background-color:#17aad4 !important;
+      border-color:#17aad4 !important;
+      color:#fff !important;
+      display:block;            /* full-width row look */
+      text-align:center;
+    }
+    /* optional: remove top divider line on the last item */
+    #mainnav li.quote-btn > a{ border-top-color:transparent !important; }
+  }
 
 .header-s1.header-dark .navbar-nav li.quote-btn .btn:hover {
   background: #17aad4;
@@ -3393,6 +3457,20 @@ form label.error {
 .footer-widget .wgs-menu .menu li:hover a:before {
   left: 3px;
 }
+@media (max-width: 767px){
+    footer .wgs .wgs-content img.footer-logo,
+    footer img.footer-logo{
+      width: 320px !important;      /* adjust 260–360px as you like */
+      max-width: 90vw !important;   /* don’t overflow small screens */
+      height: auto !important;
+      display: block;
+      margin: 0 0 12px 0;           /* or: margin:0 auto 12px; to center */
+    }
+  }
+.footer-logo { display:block; max-width: 200px; height:auto; }
+  @media (max-width: 767px){
+    .footer-logo { max-width: 180px; }
+  }
 .copyright {
   background: #131519;
   padding: 25px 0;
